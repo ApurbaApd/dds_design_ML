@@ -22,7 +22,8 @@ These descriptors included the drug's molecular weight (Drug_MW), topical polar 
 ### Model Training:
 These ML models underwent training and evaluation using a nested cross-validation strategy, comprising an inner loop for model training and hyperparameter tuning, and an outer loop for model evaluation. In the inner loop, 20% of drug-polymer groups were randomly allocated as a test set, while the remaining 80% were used for model development. Each model underwent hyperparameter optimization using group k-fold (k=10) cross-validation, with hyperparameters tuned using a random grid search. The model's performance was then evaluated on the test set within the outer loop. This nested cross-validation strategy was repeated ten times for each ML model to determine average performance. Model performance was assessed using mean absolute error (MAE), representing the average absolute difference between predicted and experimental fractional drug release values.
 
-![prediction_vs_real_fig](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/aaa41598-eb68-4981-a162-e3677f78d07e)
+![model_comparison_plot](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/291cc4cc-8b8a-4104-89b8-5ca3051057e2)
+
 
 
 ### Model Refinement:
@@ -32,13 +33,21 @@ Upon observing the absolute Spearman’s Rank correlation between the initial 17
 
 
 ### Model Evaluation :
-All models were evaluated, and their performance metrics were compared. It was found that Random Forest (RF) and Extreme Gradient Boosting (XGB) outperformed other models, with mean absolute error (MAE) values of 0.046 and 0.003, respectively. Furthermore, the actual and predicted release values were compared over time (days) of a particual DDS index.
+All models were evaluated, and their performance metrics were compared.After Hyperparameter tuning It was found that Random Forest (RF) and Extreme Gradient Boosting (XGB) outperformed other models, with mean absolute error (MAE) values of 0.099 and 0.090, respectively. Furthermore, the actual and predicted release values were compared over time (days) of a particual DDS index.
 
-![model_evaluation](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/bc322f3f-7efd-457c-bccb-f13976e21159)
+### Model prediction
 
-![5FU_RF](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/8b8e31d2-0b11-466e-a377-98881b433543)
+XGBoost Model's Prediction:
 
-![xgb_FU83](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/cc1ee6bf-8eb1-46d6-b0b9-085ef54fcad0)
+## For DEX-PLGA
+
+![xgb_5fu](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/32e09887-a3a5-4485-b5ab-544914108d3a)
+
+## For 5-FU-PLGA DDS
+
+![xgb_dex](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/001abd4f-d6cb-4803-b7fe-2f5b868bed1a)
+
+
 
 
 
