@@ -22,6 +22,8 @@ These descriptors included the drug's molecular weight (Drug_MW), topical polar 
 ### Model Training:
 These ML models underwent training and evaluation using a nested cross-validation strategy, comprising an inner loop for model training and hyperparameter tuning, and an outer loop for model evaluation. In the inner loop, 20% of drug-polymer groups were randomly allocated as a test set, while the remaining 80% were used for model development. Each model underwent hyperparameter optimization using group k-fold (k=10) cross-validation, with hyperparameters tuned using a random grid search. The model's performance was then evaluated on the test set within the outer loop. This nested cross-validation strategy was repeated ten times for each ML model to determine average performance. Model performance was assessed using mean absolute error (MAE), representing the average absolute difference between predicted and experimental fractional drug release values.
 
+## Predicted vs Actual 
+
 ![model_comparison_plot](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/291cc4cc-8b8a-4104-89b8-5ca3051057e2)
 
 
