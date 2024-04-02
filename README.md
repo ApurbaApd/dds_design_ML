@@ -46,6 +46,8 @@ XGBoost Model's Prediction:
 
 ![xgb_5fu](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/32e09887-a3a5-4485-b5ab-544914108d3a)
 
+It can be seen from the above graph that model's prediction about 80% release within 17 days is similar as experimental release 
+
 ## For DEX-PLGA
 
 ![xgb_dex](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/001abd4f-d6cb-4803-b7fe-2f5b868bed1a)
