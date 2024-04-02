@@ -1,8 +1,9 @@
 ## ML/DL Model to accelerate the discovery and design of drugs of PLGA based Drug Delivery system
+## Abstarct:
+Drug Delivery Systems based on different biodegradable polymers have shown a very promising result. Designing such Drug Delivery Systems (DDS) is a very complex task as there are many physicochemical properties of the Polymers, Drugs, their compositions directly affect the release of the Drugs from the polymeric systems. Drug release from these systems is influenced by varied factors such as Time, Drug’s molecular weight, Polymer’s molecular weight, drug loading capacity etc. And it’s very costly and time consuming to design and develop such DDS if we go by traditional approach. Here, we introduce a computational approach to predict the Fractional Drug release from the PLGA- based DDS upon training Machine Learning models on historical data.
 ### Introduction:
-A drug delivery system (DDS) is defined as a formulation or technology designed to carry medicines or therapeutic substances into the body in a careful and precise manner, enabling a therapeutic substance to selectively reach its site of action without affecting non-target cells, organs, or tissues. These systems may also include protective packaging, such as tiny shields called micelles or nanoparticles, which safeguard the medicine and facilitate its targeted delivery within the body. The primary goal of drug delivery systems is to enhance the efficacy, safety, and usability of medicines.
-
-Now, a biopolymeric drug delivery system is a type of drug delivery system that utilizes biopolymers as the primary raw material to design and develop drug carriers or matrices for controlling the release of pharmaceutical agents or medication within the body. For instance, PLGA-based DDS, being biodegradable and biocompatible, is suitable for various medical and pharmaceutical applications. However, the complex interplay between multiple parameters, including the physicochemical properties of the drug and polymer, makes it very challenging to intuitively predict the performance of these systems.The application of ML in the pharmaceutical sciences is generally limited by a lack of available open-source datasets to train models.
+The process of designing and developing a new drug is very time-consuming and expensive. Traditionally, the process involves a meticulous exploration of various factors that influence the release of drugs from the polymeric systems (DDS). These systems, which are frequently used in drug delivery systems, are designed to regulate the release of medicinal substances into the body over predetermined periods of time. Optimizing treatment efficacy requires an understanding of the various components' interactions within these systems and how they impact drug release kinetics. However, it requires extensive experimentation and iteration to identify the ideal composition and configuration of factors, especially for achieving optimal release within a short timeframe for specific diseases. This prolonged process contributes to the lengthy development timelines for drugs targeting various diseases, whether cancerous or non-cancerous. We must meticulously adjust these factors and observe the fractional drug release to find the ideal combination within a limited time frame.
+To expedite new drug development utilizing PLGA-based Drug Delivery systems, we train different machine learning models and Neural Networks on historical data. By training various machine learning models, we can identify the combination of factors that yield optimal drug release for specific diseases. Subsequently, we validate these findings through experimental testing to determine the actual drug release rates. This approach accelerates the pace of new drug development, enabling quicker advancements in pharmaceutical research and potentially faster access to treatments for patients in need.
 
 ### Objective: 
 The primary objective of this project is to leverage machine learning (ML) and deep learning (DL) techniques to expedite the discovery and design of drugs within poly(lactic-co-glycolic acid) (PLGA)-based drug delivery systems (DDS). ML/DL algorithms will be employed to predict experimental drug release from these advanced drug delivery systems. Subsequently, these trained models can be utilized to inform and guide the design of new PLGA-based drugs. The implementation of this data-driven approach has the potential to significantly reduce the time and cost associated with drug formulation development.
@@ -41,11 +42,11 @@ All models were evaluated, and their performance metrics were compared.After Hyp
 
 XGBoost Model's Prediction:
 
-## For DEX-PLGA
+## For 5-FU-PLGA DDS
 
 ![xgb_5fu](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/32e09887-a3a5-4485-b5ab-544914108d3a)
 
-## For 5-FU-PLGA DDS
+## For DEX-PLGA
 
 ![xgb_dex](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/001abd4f-d6cb-4803-b7fe-2f5b868bed1a)
 
