@@ -50,7 +50,7 @@ XGBoost Model's Prediction:
 
 ![xgb_dex](https://github.com/ApurbaApd/dds_design_ML/assets/119648597/001abd4f-d6cb-4803-b7fe-2f5b868bed1a)
 
-
+It can be seen from the above graph that model's prediction about 60% release within 19 days is similar as experimental release 
 
 
 
